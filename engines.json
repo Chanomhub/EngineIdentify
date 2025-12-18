@@ -1,0 +1,152 @@
+[
+    {
+        "name": "Unity",
+        "signatures": [
+            {
+                "type": "path_contains",
+                "value": "_data/managed",
+                "weight": 2.0
+            },
+            {
+                "type": "extension",
+                "value": "assets",
+                "weight": 1.5
+            },
+            {
+                "type": "extension",
+                "value": "ress",
+                "weight": 1.0
+            },
+            {
+                "type": "path_component",
+                "value": "level*",
+                "weight": 0.5
+            }
+        ]
+    },
+    {
+        "name": "Unreal",
+        "signatures": [
+            {
+                "type": "path_contains",
+                "value": "engine/binaries",
+                "weight": 2.0
+            },
+            {
+                "type": "extension",
+                "value": "uproject",
+                "weight": 10.0
+            },
+            {
+                "type": "filename_ends_with",
+                "value": "shipping.exe",
+                "weight": 1.5
+            }
+        ]
+    },
+    {
+        "name": "Godot",
+        "signatures": [
+            {
+                "type": "extension",
+                "value": "pck",
+                "weight": 2.0
+            },
+            {
+                "type": "filename",
+                "value": "project.godot",
+                "weight": 10.0
+            },
+            {
+                "type": "filename",
+                "value": "main.tscn",
+                "weight": 1.5
+            }
+        ]
+    },
+    {
+        "name": "RenPy",
+        "signatures": [
+            {
+                "type": "path_contains",
+                "value": "renpy/",
+                "weight": 2.0
+            },
+            {
+                "type": "extension",
+                "value": "rpyc",
+                "weight": 1.5
+            },
+            {
+                "type": "extension",
+                "value": "rpy",
+                "weight": 1.0
+            }
+        ]
+    },
+    {
+        "name": "RPGMaker",
+        "signatures": [
+            {
+                "type": "filename_starts_with",
+                "value": "game.rgss",
+                "weight": 2.0
+            },
+            {
+                "type": "filename",
+                "value": "rpg_rt.exe",
+                "weight": 2.0
+            },
+            {
+                "type": "extension",
+                "value": "rpgmvp",
+                "weight": 1.5
+            },
+            {
+                "type": "extension",
+                "value": "rpgmvo",
+                "weight": 1.5
+            },
+            {
+                "type": "filename",
+                "value": "www/index.html",
+                "weight": 0.2
+            },
+            {
+                "type": "filename",
+                "value": "package.json",
+                "weight": 0.1
+            }
+        ]
+    },
+    {
+        "name": "GameMaker",
+        "signatures": [
+            {
+                "type": "filename",
+                "value": "data.win",
+                "weight": 2.0
+            },
+            {
+                "type": "filename",
+                "value": "options.ini",
+                "weight": 0.5
+            }
+        ]
+    },
+    {
+        "name": "Electron",
+        "signatures": [
+            {
+                "type": "path_contains",
+                "value": "resources/app.asar",
+                "weight": 2.0
+            },
+            {
+                "type": "extension",
+                "value": "asar",
+                "weight": 0.5
+            }
+        ]
+    }
+]
